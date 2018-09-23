@@ -127,16 +127,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
           if (this.readyState === 4) {
             var obj = JSON.parse(this.responseText);
             console.log(obj);
-            var rank = obj.stats.p9.trnRating.rank;
-            var percentile = obj.stats.p9.trnRating.percentile;
             var matchsPlayed = obj.lifeTimeStats[7].value;
             var wins = obj.lifeTimeStats[8].value;
             var winPercentile = obj.lifeTimeStats[9].value;
             var kills = obj.lifeTimeStats[10].value;
             var kd = obj.lifeTimeStats[11].value;
-            var response = "Rank: " + rank + "\n" 
-            response += "Percentile: " + percentile + "\n" 
-            response += "Matches played: " + matchsPlayed + "\n" 
+            response = "Matches played: " + matchsPlayed + "\n" 
             response += "Wins: " + wins + "\n"
             response += "Win percentile: " + winPercentile + "\n" 
             response += "Kills: " + kills + "\n"
