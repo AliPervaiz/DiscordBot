@@ -1,4 +1,6 @@
-"DiscordBot" 
+"DiscordBot"
+
+A useful and informative discord bot to help Fortnite players before, during, and after a Battle Royale match.
 
 Locations in Fortnite Battle Royale:
 
@@ -22,3 +24,4 @@ Locations in Fortnite Battle Royale:
 "Risky Reels",
 "Tomato Temple",
 "Wailing Woods"]
+
